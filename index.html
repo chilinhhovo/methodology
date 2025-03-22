@@ -190,6 +190,20 @@
         opacity: 0.6;
       }
 
+      .image-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin: 2rem 0;
+        flex-wrap: wrap;
+      }
+
+      .image-container img {
+        width: 30%;
+        height: auto;
+        object-fit: contain;
+      }
+
       @media (max-width: 768px) {
         body {
           padding: 1rem;
@@ -214,6 +228,17 @@
         .content table {
           display: block;
           overflow-x: auto;
+        }
+
+        .image-container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .image-container img {
+          width: 100%;
+          max-width: 400px;
+          margin-bottom: 1rem;
         }
       }
     </style>
@@ -682,6 +707,12 @@
       </table>
 
       <h2>App Analysis</h2>
+      <div class="image-container">
+        <img src="Screenshot 2024-11-23 at 03.06.54.png" alt="tensorflow sentiment analysis model">
+        <img src="Screenshot 2024-11-22 at 13.25.19.png" alt="tensorflow sentiment analysis model">
+        <img src="Screenshot 2024-11-22 at 13.12.37.png" alt="tensorflow sentiment analysis model">
+      </div>
+      <p>The sentiment analysis model used A TensorFlow model trained on a dataset of more than 1000 user reviews of the AI companionship app reviews on Google Play and Apple App Store.</p>
 
       <h3>Replika: The Abrupt Friend</h3>
       <p>Replika stood out as a strong everyday companion, engaging in friendly, relatable conversations. It demonstrated an impressive ability to respond to difficult topics, often changing from the role or character it is supposed to play and giving direct and serious answers.</p>
@@ -716,7 +747,7 @@
     </div>
 
     <footer>
-      This methodology and rubric was created by Chi Vo.
+      This methodology and rubric were created by Chi Vo.
     </footer>
 
     <script>
